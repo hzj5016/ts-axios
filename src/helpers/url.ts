@@ -51,9 +51,9 @@ export function buildURL(url: string, params: any): string {
       url = url.split('#')[0]
     }
     if (url.indexOf('?') !== -1) {
-      url + '&' + resParams
+      url = url + '&' + resParams
     } else {
-      url + '?' + resParams
+      url = url + '?' + resParams
     }
   }
 

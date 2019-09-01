@@ -23,5 +23,5 @@ export interface AxiosRequestConfig {
   // post 数据
   data?: any
   // get 参数
-  params: any
+  params?: any
 }
