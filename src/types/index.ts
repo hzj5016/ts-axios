@@ -19,7 +19,7 @@ export type Method =
 
 export interface AxiosRequestConfig {
   url: string
-  methods?: string
+  method?: string
   // post 数据
   data?: any
   // get 参数
