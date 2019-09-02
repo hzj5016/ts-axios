@@ -26,7 +26,7 @@ function processData(config: AxiosRequestConfig): any {
 }
 
 function processHeaders(config: AxiosRequestConfig): any {
-  const { headers, data } = config
+  const { headers = {}, data } = config
   return setHeaders(headers, data)
 }
 export default axios

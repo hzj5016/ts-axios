@@ -26,6 +26,7 @@ export function setHeaders(headers: any, data: any): any {
   }
 
   normHeadersName(headers, 'Content-Type')
+  normHeadersName(headers, 'Accept')
 
   if (isCommonObject(data)) {
     if (headers && !headers['Content-Type']) {
