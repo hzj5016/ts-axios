@@ -6,7 +6,7 @@ function encode(val: string): string {
     .replace(/%3a/gi, ':')
     .replace(/%24/g, '$')
     .replace(/%2c/gi, ',')
-    .replace(/%20/g, ' ')
+    .replace(/%20/g, '+')
     .replace(/%5b/gi, '[')
     .replace(/%5d/gi, ']')
 }
